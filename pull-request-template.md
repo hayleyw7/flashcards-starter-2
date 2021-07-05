@@ -8,6 +8,7 @@ ex: summary, issue fixed, motivation, context, dependencies
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Refactoring
 - [ ] Create or move file/folder
+- [ ] Other
 
 ## Testing
 Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
