@@ -22,13 +22,11 @@ Written in JavaScript (Mocha, Chai)
 
 Built with Visual Studio Code
 
-Code stored on GitHub
+[Code stored on GitHub]((https://github.com/hayleyw7/flashcards-starter-2))
 
-[Project Board on Trello](https://trello.com/b/fNj5wUIf)
+[Project Board on GitHub](https://github.com/users/hayleyw7/projects/1)
 
 ## Install/Setup Instructions
-
-The code is available at on GitHub [here](https://github.com/hayleyw7/flashcards-starter-2).
 
 To use, clone the repo onto your local machine, open the terminal, navigate to the file, and enter `node index.js`.
 
