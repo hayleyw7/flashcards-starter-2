@@ -22,7 +22,7 @@ Written in JavaScript (Mocha, Chai)
 
 Built with Visual Studio Code
 
-[Code stored on GitHub]((https://github.com/hayleyw7/flashcards-starter-2))
+[Code stored on GitHub](https://github.com/hayleyw7/flashcards-starter-2)
 
 [Project Board on GitHub](https://github.com/users/hayleyw7/projects/1) 
 
