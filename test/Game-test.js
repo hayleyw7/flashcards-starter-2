@@ -16,4 +16,4 @@ describe('Game', () => {
 
     expect(game).to.be.an.instanceof(Game);
   }); 
-}
+});

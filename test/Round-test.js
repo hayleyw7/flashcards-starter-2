@@ -16,5 +16,4 @@ describe('Round', () => {
 
     expect(round).to.be.an.instanceof(Round);
   }); 
-}
-
+});

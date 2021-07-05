@@ -15,4 +15,4 @@ describe('Test', () => {
 
     expect(test).to.be.an.instanceof(Test);
   }); 
-}
+});
