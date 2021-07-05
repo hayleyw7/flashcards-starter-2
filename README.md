@@ -26,19 +26,41 @@ Built with Visual Studio Code
 
 [Project Board on GitHub](https://github.com/users/hayleyw7/projects/1) 
 
-## Install/Setup Instructions
+## Install and setup
 
-To use, clone the repo onto your local machine, open the terminal, navigate to the file, and enter `node index.js`.
+### Clone the repo
 
-The user starts is presented with a flashcard, which consists of a question and three possible answers. They must select an answer by using keyboard arrows and then pressing "Enter" or "Return" on their keyboard. The user will be then told if their answer was correct or incorrect.
+Enter the following command in the Terminal:
+`git clone https://github.com/hayleyw7/flashcards-starter-2.git`
 
-Once all questions are complete, the game will end the game, and tell the user what percent of answers that they got correct.
+### Install dependencies
+
+Enter the following command in the Terminal:
+`npm install`
+
+### Navigate to folder
+
+Enter the following command in the Terminal:
+`cd flashcards-starter-2`
+
+### Run game
+
+Enter the following command in the Terminal:
+`node index.js`
+
+## Play the game
+
+After following the above installation and setup instructions, the user is presented with a flashcard in the Terminal, which consists of a question and three possible answers. They must select an answer by using keyboard arrows and then pressing "Enter" or "Return" on their keyboard.
+
+The user will be then told if their answer was correct or incorrect.
+
+Once all questions are complete, the game will end and tell the user what percent of answers that they got correct.
 
 ## GIF
 
 ![Flashcards GIF](assets/flashcards.gif) 
 
-## Future Additions
+## Future additions
 
 * The user will need to answer correctly 90% of the time, or they will have to go through the cards again.
 
