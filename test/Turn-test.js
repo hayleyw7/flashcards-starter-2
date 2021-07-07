@@ -14,7 +14,7 @@ describe('Turn', () => {
     const turn = new Turn();
 
     expect(turn).to.be.an.instanceof(Turn);
-  }); 
+  });
 
   it('should store a guess', () => {
     const card = new Card(
@@ -26,7 +26,7 @@ describe('Turn', () => {
     const turn = new Turn('pug', card);
 
     expect(turn.guess).to.equal('pug');
-  }); 
+  });
 
   it('should store a guess', () => {
     const card = new Card(
@@ -38,7 +38,7 @@ describe('Turn', () => {
     const turn = new Turn('pug', card);
 
     expect(turn.currentCard).to.equal(card);
-  }); 
+  });
 
   it('should store a guess', () => {
     const card = new Card(
@@ -50,7 +50,7 @@ describe('Turn', () => {
     const turn = new Turn('pug', card);
 
     expect(turn.returnGuess()).to.equal('pug');
-  }); 
+  });
 
   it('should store a card', () => {
     const card = new Card(
@@ -62,7 +62,7 @@ describe('Turn', () => {
     const turn = new Turn('pug', card);
 
     expect(turn.returnCard()).to.equal(card);
-  });  
+  });
 
   it('should return boolean if guess matches correct answer', () => {
     const card = new Card(
@@ -74,7 +74,7 @@ describe('Turn', () => {
     const turn = new Turn('pug', card);
 
     expect(turn.evaluateGuess()).to.equal(false);
-  });  
+  });
 
   it('should say if test is correct', () => {
     const card = new Card(
@@ -86,5 +86,5 @@ describe('Turn', () => {
     const turn = new Turn('pug', card);
 
     expect(turn.evaluateGuess()).to.equal(false);
-  }); 
+  });
 });
