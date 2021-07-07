@@ -1,5 +1,7 @@
 const chai = require('chai');
+
 const expect = chai.expect;
+
 const Card = require('../src/Card');
 const Round = require('../src/Round');
 const Deck = require('../src/Deck');
@@ -7,7 +9,7 @@ const Deck = require('../src/Deck');
 describe('Round', () => {
 
   it('should be a function', () => {
-      
+
     expect(Round).to.be.a('function');
   });
 
@@ -38,10 +40,10 @@ describe('Round', () => {
     const round = new Round(deck);
 
     expect(round).to.be.an.instanceOf(Round);
-  }); 
+  });
 
   it('should return current card being played', () => {
-    
+
     const card1 = new Card(
       1,
       'What is Robbie\'s favorite animal',
@@ -66,13 +68,13 @@ describe('Round', () => {
     const deck = new Deck([card1, card2, card3]);
     const round = new Round(deck);
 
-    round.takeTurn("x")
-    
+    round.takeTurn("x");
+
     expect(round.returnCurrentCard()).to.equal(card2);
   });
 
   it('should start at 0 turns', () => {
-    
+
     const card1 = new Card(
       1,
       'What is Robbie\'s favorite animal',
@@ -130,7 +132,7 @@ describe('Round', () => {
   });
 
   it('should update turn count', () => {
-    
+
     const card1 = new Card(
       1,
       'What is Robbie\'s favorite animal',
@@ -226,7 +228,7 @@ describe('Round', () => {
   });
 
   it('should provide feedback if correct', () => {
-    
+
     const card1 = new Card(
       1,
       'What is Robbie\'s favorite animal',
@@ -254,8 +256,8 @@ describe('Round', () => {
     expect(round.takeTurn('sea otter')).to.deep.equal('correct!');
   });
 
-    it('should provide feedback if incorrect', () => {
-    
+  it('should provide feedback if incorrect', () => {
+
     const card1 = new Card(
       1,
       'What is Robbie\'s favorite animal',
@@ -309,7 +311,7 @@ describe('Round', () => {
     const deck = new Deck([card1, card2, card3]);
     const round = new Round(deck);
 
-    round.incorrectGuesses = ["wrong1", "wrong2", "wrong3"];
+    round.incorrectGuesses = ['wrong1', 'wrong2', 'wrong3'];
     round.turns = 10;
 
     expect(round.calculatePercentCorrect()).to.equal(70);
@@ -342,8 +344,8 @@ describe('Round', () => {
     const deck = new Deck([card1, card2, card3]);
     const round = new Round(deck);
 
-    round.takeTurn("wrong1");
-    round.takeTurn("wrong2");
+    round.takeTurn('wrong1');
+    round.takeTurn('wrong2');
 
     round.turns = 10;
 
