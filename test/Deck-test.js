@@ -34,7 +34,7 @@ describe('Deck', () => {
     );
 
     const deck = new Deck([card1, card2, card3]);
-    
+
     expect(deck.cards).to.deep.equal([
       {
         id: 1,
@@ -86,7 +86,7 @@ describe('Deck', () => {
     );
 
     const deck = new Deck([card1, card2, card3]);
-    
+
     expect(deck.countCards()).to.equal(3);
   });
 });
